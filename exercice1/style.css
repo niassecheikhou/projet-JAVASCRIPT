@@ -1,0 +1,37 @@
+
+.lesicones{
+     margin: 2em;
+}
+.container{
+    border: 3px solid rgb(219, 16, 16);
+    background-color: rgb(68, 168, 214);
+    display : flex;
+    padding: 4em 2em;
+    /* height: 80vh; */
+    flex-wrap: wrap;
+}
+.icone{
+    color : #fff;
+    background-color : rgb(144, 224, 151);
+    display : flex;
+    justify-content:flex-end;
+    padding: 1em;
+}
+i{
+    font-size : 2vh;
+    color : rgb(252, 248, 248);
+    margin-right: 5px;
+}
+textarea{
+    border: 1px solid rgb(14, 167, 47);
+}
+input{
+
+    color : rgb(243, 237, 237);
+    font-size: 2vh;
+    background-color:rgb(144, 224, 151);
+    height: 5vh; 
+    position:absolute;
+    right:10px;
+    top:10px;
+}
