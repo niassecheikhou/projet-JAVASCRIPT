@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>exercice3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="totale">
+        <div class="container">
+
+            <div class="password">
+                <textarea type="text" id="ajoutermotdepass"></textarea>
+                <button type="button" id="btncopy">copy</button>
+            </div>
+            <div class="content">
+                <div class="inte">
+                    <label for="">longueur du password</label>
+                    <input type="number" id="longueurpassword" min="6" max="20" value="6">
+                </div>
+                <div class="inte">
+                    <label for="">contient des lettres majuscule</label>
+                    <input type="checkbox" id="majuscule">
+                </div>
+                <div class="inte">
+                    <label for="">contient des lettres miniscule</label>
+                    <input type="checkbox" id="miniscule">
+                </div>
+                <div class="inte">
+                    <label for="">contient des nombres</label>
+                    <input type="checkbox" id="nombre">
+                </div>
+                <div class="inte">
+                    <label for="">contient des caracteres spéciaux</label>
+                    <input type="checkbox" id="speciaux">
+                </div>
+                
+            </div>
+            <div class="footer">
+                <button type="submit" id="valider">Generer le mot de passe</button>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -45,4 +45,5 @@ function blocElementsLesIcones(){
   bnt.addEventListener('click', function(){
     blocElementsLesIcones();
   });
+  window.onload=blocElementsLesIcones();
 
