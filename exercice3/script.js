@@ -1,5 +1,6 @@
 const valider = document.getElementById('valider');
 const btncopy = document.getElementById('btncopy');
+const motdepass = document.getElementById('ajoutermotdepass');
 // si on utulise querySelector 
 // const btncopy=document.getElementById('btncopy');
 
@@ -33,12 +34,13 @@ function creationPassWord() {
     const min = document.getElementById('miniscule').checked;
     const nbre = document.getElementById('nombre').checked;
     const caracteres = document.getElementById('speciaux').checked;
-
+    
 
     if (maj + min + nbre + caracteres === 0) {
         alert('veuillez faire une option');
         return;
     }
+    
     // si l'utilisateur a cocher au moins un champs
 
 
@@ -55,10 +57,34 @@ function creationPassWord() {
     ajoutermotdepass.innerHTML = password;
 }
 
+/* function CopieMotDePassword() {
+const textarea=createElement('textarea');
+const longueurpassword = document.getElementById('longueurpassword').innerHTML;
+if (!longueurpassword){return;};
+textarea.value=longueurpassword;
+
+
+} */
+function CopieMotDePassword() {
+    navigator.clipboard.writeText(motdepass.value);
+    /* Select the text field */
+    // motdepass.select();
+    // motdepass.setSelectionRange(0, 99999); /* For mobile devices */
+  
+    /* Copy the text inside the text field */
+    
+  }
+
+
 // les events
 valider.addEventListener('click', function () {
     creationPassWord();
 });
+btncopy.addEventListener('click', function () {
+   CopieMotDePassword();
+
+});
+
 
 //creation des fonctions
 
